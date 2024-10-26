@@ -1499,21 +1499,63 @@ header .logo a {
 }
 
 .intro-info {
-	margin-top: 4.2rem;
-	/* margin-right: -30px;
-	margin-left: -30px; */
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4.2rem;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px; /* 添加内边距来替代之前的负边距 */
 }
+
+.intro-info .image-container {
+    width: 18rem; /* 与图片宽度相同 */
+    margin-right: 4rem; /* 增加右侧间距 */
+    flex-shrink: 0;
+}
+
 .intro-info img {
-	height: 20rem;
-	width: 20rem;
-	border-radius: 50%;
-	margin: .3rem 3rem 0 0;
-	float: left;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    margin: 0; /* 移除图片的边距 */
 }
+
+.intro-info .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
 .intro-info .lead {
-	text-align: left;
-	padding-left: 2rem;
+    text-align: left;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+	line-height: 1.6;
 }
+
+.intro-info .research-interests {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* 减少左侧填充以更好地对齐 */
+    margin-top: 0.5rem;
+    margin-left: 0; /* 移除可能的默认左边距 */
+    width: 100%; /* 确保列表占满容器宽度 */
+}
+
+.intro-info .research-interests li {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    text-align: left; /* 确保列表项文本左对齐 */
+}
+
+
+
 
 .about-content {
 	position: relative;
@@ -2602,7 +2644,7 @@ footer .copyright span:last-child::after {
 .links {
     display: flex;
 	justify-content: center; /* 水平居中 */
-    gap: 10px; /* 设置图标之间的间距 */
+    gap: 20px; /* 设置图标之间的间距 */
 }
 
 .links a {
