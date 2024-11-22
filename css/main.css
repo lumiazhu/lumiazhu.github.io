@@ -1026,7 +1026,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #7d7d7d;
 }
 .section-intro {
-	max-width: 700px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1076,6 +1076,67 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	}
 }
 
+/* CSS 部分 */
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.news-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-title {
+    font-size: 15px;
+    font-weight: 200;
+    color: #666;
+    margin: 0;
+}
+
+.news-date {
+    color: #666;
+    font-size: 16px;
+}
+
+.news-content {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.paper-name {
+    font-weight: 500;
+    color: #444;
+}
+
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .news-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-date {
+        margin-top: 5px;
+    }
+
+    .news-title {
+        font-size: 20px;
+    }
+}
+
+
 
 /** 
  * ===================================================================
@@ -1106,7 +1167,7 @@ header .logo {
 	float: left;
 	margin-left: 20px;
 	margin-right: 50px;
-	margin-top: 25px;
+	margin-top: 20px;
 	position: relative;
 }
 header .logo a {
@@ -1117,10 +1178,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 92px;
-	height: 15px;
+	width: 180px;
+	height: 30px;
 	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	background-size: contain;
 }
 
 /**
@@ -1500,26 +1561,30 @@ header .logo a {
 
 .intro-info {
     display: flex;
-    align-items: flex-start;
-    margin-top: 4.2rem;
+    align-items: center;
+	justify-content: center;
+    margin: 4.2rem auto 0;
     width: 100%;
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 30px; /* 添加内边距来替代之前的负边距 */
+    padding: 0 20px; /* 添加内边距来替代之前的负边距 */
 }
 
 .intro-info .image-container {
-    width: 18rem; /* 与图片宽度相同 */
-    margin-right: 4rem; /* 增加右侧间距 */
+    width: 25rem; /* 与图片宽度相同 */
+    margin-right: 7rem; /* 增加右侧间距 */
     flex-shrink: 0;
 }
 
 .intro-info img {
-    height: 18rem;
-    width: 18rem;
+    height: 25rem;
+    width: 25rem;
     border-radius: 50%;
     margin: 0; /* 移除图片的边距 */
+	margin-right: 20rem;
+	margin-bottom: 3rem;
+	object-fit: cover;
 }
 
 .intro-info .text-container {
@@ -1560,7 +1625,7 @@ header .logo a {
 .about-content {
 	position: relative;
 	text-align: left;
-	max-width: 850px;
+	max-width: 1000px;
 	margin-bottom: 3.6rem;
 }
 .about-content h3 {
