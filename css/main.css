@@ -1599,7 +1599,7 @@ header .logo a {
 
 .intro-info .lead {
     text-align: left;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 	line-height: 1.6;
 }
@@ -1613,7 +1613,7 @@ header .logo a {
 }
 
 .intro-info .research-interests li {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
     text-align: left; /* 确保列表项文本左对齐 */
