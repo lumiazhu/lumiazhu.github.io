@@ -2720,3 +2720,49 @@ footer .copyright span:last-child::after {
 .links a:hover {
     text-decoration: underline;
 }
+
+.publication {
+	display: flex;
+	margin-bottom: 20px;
+  }
+  
+  .pub-image img {
+	width: 150px;
+	height: auto;
+	margin-right: 20px;
+  }
+  
+  .pub-details {
+	max-width: 600px;
+  }
+  
+  .pub-year {
+	font-size: 14px;
+	color: gray;
+  }
+  
+  .pub-title {
+	font-size: 20px;
+	margin: 10px 0;
+  }
+  
+  .pub-authors {
+	font-size: 16px;
+	font-weight: bold;
+  }
+  
+  .pub-links a {
+	margin-right: 10px;
+	color: blue;
+	text-decoration: none;
+  }
+  
+  .pub-tags span {
+	display: inline-block;
+	background-color: #e0e0e0;
+	padding: 5px 10px;
+	margin: 5px 5px 0 0;
+	border-radius: 4px;
+	font-size: 12px;
+  }
+  
